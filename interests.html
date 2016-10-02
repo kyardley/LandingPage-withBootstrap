@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Interests</title>
+<meta charset="utf-8"> <!--This is setting charachters available for webpage -->
+<meta name ="viewport" content="width-device-width, initial-scale=1"> <!--This line is standard-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  <!--Calls bootstrap CDN.  This is the minified version.  The code is not styled for readability-->
+<link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+    <div id=wrapper>
+
+        <!--Sidebar-->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <img class="img-circle img-responsive" src="profile.jpg" width="230" height="230">
+                <h4 color="white">Klynt B. Yardley <br>
+                    Information Systems Major <br>
+	                Brigham Young University </h4>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="Resume/resume.html" >Resume</a></li>
+                <li><a href="interests.html" >Interests</a></li>
+            </ul>
+        </div>
+
+        <!--Main Body-->
+        <div id="main-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="#" class="btn btn-info" id="menu-toggle"> Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!--Calls bootstrap javascript CDN. This javascript loads after the webpage has loaded because it is in the body. Helps with load time.-->
+
+    <!--Menu-toggle script-->
+    <script>
+     $("#menu-toggle").click( function(e) {
+         e.preventDefault();
+         $("#wrapper").toggleClass("menuDisplayed");
+     })
+    </script>
+
+</body>
+</html>
