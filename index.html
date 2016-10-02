@@ -5,8 +5,8 @@
 <meta charset="utf-8"> <!--This is setting charachters available for webpage -->
 <meta name ="viewport" content="width-device-width, initial-scale=1"> <!--This line is standard-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  <!--Calls bootstrap CDN.  This is the minified version.  The code is not styled for readability-->
-<link rel="stylesheet" href="sidebar.css">
 </head>
+
 <body>
     <div id="Header">
         <nav class="navbar navbar-inverse">
@@ -27,20 +27,23 @@
             </div>
         </nav>
     </div>
-    <div id=wrapper>
+
+    <!--Container of the eniter body of website-->
+    <div class="container-fluid">
+        <div class="row">
 
         <!--Sidebar-->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
+        <div class="col-md-3" style="background: #2C3E50; height: 100%">
+
                 <img class="img-circle img-responsive" src="profile.jpg" width="230" height="230">
-                <h4>Klynt B. Yardley <br>
+                <h4 style="color: white">Klynt B. Yardley <br>
                     Information Systems Major <br>
 	                Brigham Young University </h4>
-            </ul>
+
         </div>
 
         <!--Main Body-->
-        <div id="main-wrapper">
+        <div class="col-md-9">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
@@ -51,7 +54,7 @@
             </div>
         </div>
     </div>
-
+    </div>
 
 
 
