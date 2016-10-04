@@ -1,0 +1,24 @@
+#sidebar{
+    background: #2C3E50;
+}
+
+#sidebar h4{
+    color: white;
+}
+
+#footer{
+    background: #503e2c;
+}
+
+#footer p{
+    color: white;
+    padding-top: 10px;
+}
+
+#footer a{
+    color: #476481;
+}
+
+#footer a:visit{
+    color: #476481;
+}
